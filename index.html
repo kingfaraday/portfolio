@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width, initial-scale=1.0">
+  <title>Farady – International Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="fixed-header">
+    <div class="logo">Farady</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <select id="lang-select">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+        <option value="zh">中文</option>
+      </select>
+    </nav>
+  </header>
 
-<h1>This Is My Fisrt Website</h1>
-<p>Im A Computer Scientist.</p>
+  <section id="hero" class="glass-card">
+    <h1>Hello, I'm Farady</h1>
+    <p>Innovator. Developer. Global Thinker.</p>
+  </section>
 
+  <section id="about" class="glass-card">
+    <h2>About Me</h2>
+    <p>An international software developer with expertise in front‑end and back‑end technologies, passionate about delivering global solutions.</p>
+  </section>
+
+  <section id="portfolio" class="glass-card">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="item">🌐 Global Website</div>
+      <div class="item">📱 Mobile App</div>
+      <div class="item">📊 Dashboard</div>
+      <div class="item">🧠 AI Project</div>
+    </div>
+  </section>
+
+  <section id="contact" class="glass-card">
+    <h2>Contact Me</h2>
+    <p id="form-status"></p>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer class="glass-card">
+    &copy; 2025 Farady. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

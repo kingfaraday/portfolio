@@ -1,0 +1,110 @@
+/* Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat fixed;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Fixed Header */
+.fixed-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.08);
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #8ecbff;
+}
+nav select {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  margin: 6rem auto 2rem auto;
+  max-width: 800px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.glass-card h2 {
+  margin-bottom: 1rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.item {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Contact Form */
+form input, form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+form button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #5b9dff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #a3cfff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
